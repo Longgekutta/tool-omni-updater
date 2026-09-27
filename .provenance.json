@@ -1,0 +1,66 @@
+{
+  "project_name": "tool-omni-updater",
+  "version": "0.1.0-wip",
+  "status": "UNFINISHED_WORK_IN_PROGRESS",
+  "last_updated": "2026-09-27 11:19:00",
+  "search_topic": "universal cross-platform software updater package manager GitHub releases Windows Linux Android macOS",
+  "radar_query_vectors": [
+    "universal cross-platform software updater package manager GitHub releases Windows Linux Android macOS core",
+    "universal cross-platform software updater package manager GitHub releases Windows Linux Android macOS benchmark",
+    "universal cross-platform software updater package manager GitHub releases Windows Linux Android macOS spec"
+  ],
+  "grounded_sources": [
+    {
+      "name": "ImranR98/Obtainium",
+      "category": "OPEN_SOURCE",
+      "url": "https://github.com/ImranR98/Obtainium",
+      "stars": 20001,
+      "core_insight": "Get Android app updates straight from the source (工业界验证度: ⭐ 20001)",
+      "adopted_aspects": "吸收其在 Android 平台的资产决议算法、SemVer 语义版本对比逻辑与设备 ABI 评分加权模型",
+      "tradeoff": "突破其仅支持 Android 单一系统的局限，拓展为跨 Windows、Linux、macOS 的全域管理引擎"
+    },
+    {
+      "name": "topgrade-rs/topgrade",
+      "category": "OPEN_SOURCE",
+      "url": "https://github.com/topgrade-rs/topgrade",
+      "stars": 4588,
+      "core_insight": "Universal multi-package-manager upgrader across OSes (工业界验证度: ⭐ 4588)",
+      "adopted_aspects": "吸收其提供者抽象模式（Provider Pattern），实现各异构平台执行器的单一职责与解耦",
+      "tradeoff": "突破其只能调用包管理器的限制，专门解决直接来自 GitHub Releases 的绿色便携软件更新"
+    },
+    {
+      "name": "RikkaApps/Shizuku",
+      "category": "OPEN_SOURCE",
+      "url": "https://github.com/RikkaApps/Shizuku",
+      "stars": 30656,
+      "core_insight": "Using system APIs directly with adb/root privileges through Binder IPC (工业界验证度: ⭐ 30656)",
+      "adopted_aspects": "吸收其免交互调用 PackageInstaller.Session 的静默安装通信机制",
+      "tradeoff": "仅作为 Android 端专属提权插槽，核心调度保持平台中立"
+    },
+    {
+      "name": "velopack/velopack",
+      "category": "OPEN_SOURCE",
+      "url": "https://github.com/velopack/velopack",
+      "stars": 2351,
+      "core_insight": "Zero-dependency cross-platform desktop installer and auto-updater (工业界验证度: ⭐ 2351)",
+      "adopted_aspects": "吸收其 Windows 平台原子重命名绕过正在运行文件锁的经典技术",
+      "tradeoff": "从自更新库升级为全系统第三方软件的外部自治管家"
+    },
+    {
+      "name": "crazy-max/diun",
+      "category": "OPEN_SOURCE",
+      "url": "https://github.com/crazy-max/diun",
+      "stars": 4939,
+      "core_insight": "Receive notifications when an upstream image or release is updated (工业界验证度: ⭐ 4939)",
+      "adopted_aspects": "吸收其基于 ETag 与 If-None-Match 的零负载高频变动探测设计",
+      "tradeoff": "补全其只发通知缺乏客户端安装与文件落盘的下半程链条"
+    }
+  ],
+  "architectural_invariants": [
+    "Domain Purity & Anti-Bleed",
+    "Proof-of-Truth & Invariant Testing",
+    "Secret & Security Isolation",
+    "Platform Specialization Invariant",
+    "Trinity Orthogonal Synergy"
+  ]
+}
